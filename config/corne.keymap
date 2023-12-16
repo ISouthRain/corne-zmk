@@ -102,9 +102,9 @@
 //                             '--------+---------+---------'       '--------+--------+---------'
 
                         bindings = <
-   &sys_reset   &trans           &trans         &trans        &trans        &trans         &kp C_VOLUME_UP    &trans &trans &trans &trans &sys_reset
+   &sys_reset   &trans           &trans         &trans        &trans        &trans         &kp C_VOLUME_UP    &trans &trans &rgb_ug RGB_ON &trans &sys_reset
    &bt BT_CLR   &bt BT_SEL 0     &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4   &kp C_VOLUME_DOWN  &trans &trans &trans &trans &trans
-   &ext_power EP_ON       &ext_power EP_OFF &out OUT_TOG   &trans        &trans        &trans         &bl BL_TOG         &bl BL_INC &bl BL_DEC &rgb_ug RGB_TOG &rgb_ug RGB_BRI &rgb_ug RGB_BRD
+   &ext_power EP_ON       &ext_power EP_OFF &out OUT_TOG   &trans        &trans        &trans         &bl BL_TOG         &bl BL_INC &bl BL_DEC &rgb_ug RGB_OFF &rgb_ug RGB_BRI &rgb_ug RGB_BRD
                                                      &trans &trans &trans   &trans &trans &trans
                         >;
                 };
