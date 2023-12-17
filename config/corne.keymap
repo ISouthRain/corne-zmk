@@ -20,7 +20,7 @@
 #define Fkey 4
 
 &led_strip {
-    chain-length = <13>;
+    chain-length = <14>;
 };
 
 / {
