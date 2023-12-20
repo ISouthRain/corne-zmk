@@ -1,0 +1,12 @@
+# 介绍
+键盘 ZMK 固件库
+# Corne
+- MCU: ProMicro NRF52840
+- Board: nice!nano V2
+- PCB: corne-cherry
+- Keyboard: Corne
+- Keymap: [[https://nickcoutsos.github.io/keymap-editor/][Keymap Editor]]
+## 已知问题
+- [ ] RGB 五颜六色功能无效, 仅单色
+- [ ] 启用 BackLight 功能会导致编译失败
+      CONFIG_ZMK_BACKLIGHT=y
