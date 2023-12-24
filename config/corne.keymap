@@ -93,10 +93,10 @@
             //                                   '--------+----------+----------'       '---------+----------+---------'
 
             bindings = <
-&kp LG(LS(N4))  &trans  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN       &kp HOME               &kp CARET           &kp PAGE_UP          &kp UP_ARROW    &kp PAGE_DOWN    &kp HOME  &kp LG(LS(N4))
-&trans          &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW     &kp END                &kp MINUS           &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END   &trans
-&out OUT_TOG    &trans  &trans          &trans          &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)    &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &trans          &trans           &trans    &out OUT_TOG
-                                        &kp LGUI        &mo 3               &trans                 &trans              &trans               &trans
+&kp LG(LS(N4))  &kp INS  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN       &kp HOME               &kp CARET           &kp PAGE_UP          &kp UP_ARROW    &kp PAGE_DOWN    &kp HOME  &kp LG(LS(N4))
+&trans          &kp DEL  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW     &kp END                &kp MINUS           &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END   &trans
+&out OUT_TOG    &trans   &trans          &trans          &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)    &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &trans          &trans           &trans    &out OUT_TOG
+                                         &kp LGUI        &mo 3               &trans                 &trans              &trans               &trans
             >;
         };
 
@@ -112,7 +112,7 @@
             //                             '--------+---------+---------'       '--------+--------+---------'
 
             bindings = <
-&sys_reset        &trans             &trans        &trans        &sl 4         &sl 5           &kp C_VOLUME_UP    &trans      &trans      &trans           &trans           &sys_reset
+&sys_reset        &trans             &trans        &trans        &sl 4         &tog 5          &kp C_VOLUME_UP    &trans      &trans      &trans           &trans           &sys_reset
 &bt BT_CLR        &bt BT_SEL 0       &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_VOLUME_DOWN  &trans      &trans      &rgb_ug RGB_ON   &trans           &trans
 &ext_power EP_ON  &ext_power EP_OFF  &out OUT_TOG  &trans        &trans        &trans          &bl BL_TOG         &bl BL_INC  &bl BL_DEC  &rgb_ug RGB_OFF  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD
                                                    &trans        &trans        &trans          &trans             &trans      &trans
@@ -140,10 +140,10 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans                   &kp LC(LA(KP_NUMBER_8))  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &kp LC(LA(KP_NUMBER_4))  &kp LC(LA(KP_NUMBER_5))  &kp LC(LA(KP_NUMBER_6))
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans                   &kp LC(LA(KP_NUMBER_2))  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans     &trans  &kp INS  &kp SLASH     &kp ASTERISK  &kp MINUS    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS                &kp LC(LA(KP_NUMBER_8))  &trans
+&kp LCTRL  &trans  &kp DEL  &trans        &trans        &kp PLUS     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LC(LA(KP_NUMBER_4))  &kp LC(LA(KP_NUMBER_5))  &kp LC(LA(KP_NUMBER_6))
+&trans     &trans  &trans   &trans        &kp PERIOD    &kp RET      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS                 &kp LC(LA(KP_NUMBER_2))  &trans
+                            &kp LEFT_ALT  &trans        &trans       &kp KP_NUMBER_0  &tog 5           &trans
             >;
         };
     };
