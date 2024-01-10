@@ -47,9 +47,6 @@
 
     keymap {
         compatible = "zmk,keymap";
-        base {
-            sensor-bindings = <&rgb_encoder>;
-        };
 
         default_layer {
             // .--------------------------------------------------------------.       .-----------------------------------------------------------.
@@ -68,6 +65,7 @@
 &kp LSHFT     &kp Z  &kp X  &kp C      &kp V  &kp B        &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH  &mt LGUI GRAVE
                             &kp LALT  &mo 1  &lt 2 RET    &kp SPACE  &kp BSPC  &mo 1
             >;
+            sensor-bindings = <&rgb_encoder>;
         };
 
         lower_layer {
