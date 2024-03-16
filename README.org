@@ -1,16 +1,16 @@
-# 默认使用 Miryakoku 5x3 布局
+* 默认使用 Miryakoku 5x3 布局
 https://github.com/manna-harbour/miryoku
 - [ ] 打字太快会影响 &mt/&lt 按键
 目前迁移至 https://github.com/ISouthRain/miryoku_zmk
-# 介绍
+* 介绍
 键盘 ZMK 固件库
-# Corne
+* Corne
 - MCU: ProMicro NRF52840
 - Board: nice!nano V2
 - PCB: corne-cherry
 - Keyboard: Corne
 - Keymap: [[https://nickcoutsos.github.io/keymap-editor/][Keymap Editor]]
-## 已知问题
+** 已知问题
 - [x] RGB 五颜六色功能无效, 仅单色
 - [ ] 启用 BackLight 功能会导致编译失败
       CONFIG_ZMK_BACKLIGHT=y
