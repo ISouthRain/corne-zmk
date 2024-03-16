@@ -20,9 +20,6 @@
 #define ADJUST 3
 #define Fkey 4
 */
-&mt {
-    tapping-term-ms = <50>;
-};
 / {
     behaviors {
         hm: homerow_mods {
