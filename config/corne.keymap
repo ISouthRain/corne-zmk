@@ -22,10 +22,11 @@
 */
 
 &led_strip { chain-length = <27>; };
-
+/*
 &sl { release-after-ms = <5000>; };
-
+*/
 / {
+    /*
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -36,6 +37,7 @@
             bindings = <&kp>, <&kp>;
         };
     };
+    */
 
     keymap {
         compatible = "zmk,keymap";
