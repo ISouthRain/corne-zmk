@@ -38,6 +38,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
+          display-name = "Base";
             bindings = <
 &trans  &kp Q           &kp W       &kp E        &kp R         &kp T        &kp Y      &kp U            &kp I         &kp O       &kp P         &tog 8
 &trans  &mt LEFT_WIN A  &mt LALT S  &mt LCTRL D  &mt LSHIFT F  &kp G        &kp H      &mt LSHIFT J     &mt LCTRL K   &mt LALT L  &mt LWIN SQT  &trans
@@ -47,6 +48,7 @@
         };
 
         media_layer {
+          display-name = "Media";
             bindings = <
 &trans  &trans        &trans    &trans     &trans      &bt BT_CLR      &rgb_ug RGB_TOG    &rgb_ug RGB_HUD   &rgb_ug RGB_SAD    &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &trans
 &trans  &kp LEFT_WIN  &kp LALT  &kp LCTRL  &kp LSHIFT  &bt BT_SEL 4    &ext_power EP_TOG  &kp K_PREV        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_NEXT       &trans
@@ -56,6 +58,7 @@
         };
 
         nav_layer {
+          display-name = "Nav";
             bindings = <
 &trans  &trans        &trans    &trans     &trans      &trans    &kp K_REDO    &kp K_PASTE     &kp K_COPY      &kp K_CUT     &kp K_UNDO       &trans
 &trans  &kp LEFT_WIN  &kp LALT  &kp LCTRL  &kp LSHIFT  &trans    &kp CAPSLOCK  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
@@ -65,6 +68,7 @@
         };
 
         mouse_layer {
+          display-name = "Mouse";
             bindings = <
 &trans  &trans        &trans    &trans     &trans      &trans    &kp K_REDO  &kp K_PASTE     &kp K_COPY      &kp K_CUT     &kp K_UNDO       &trans
 &trans  &kp LEFT_WIN  &kp LALT  &kp LCTRL  &kp LSHIFT  &trans    &trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
@@ -74,6 +78,7 @@
         };
 
         sym_layer {
+          display-name = "Sym";
             bindings = <
 &trans  &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &trans  &trans      &trans     &trans    &trans        &trans
 &trans  &kp COLON       &kp DOLLAR       &kp PERCENT           &kp LCTRL              &kp PLUS           &trans  &kp LSHIFT  &kp LCTRL  &kp LALT  &kp LEFT_WIN  &trans
@@ -83,6 +88,7 @@
         };
 
         num_layer {
+          display-name = "Num";
             bindings = <
 &trans  &kp LEFT_BRACKET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RIGHT_BRACKET       &trans  &trans      &trans     &trans    &trans        &trans
 &trans  &kp SEMICOLON     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL               &trans  &kp LSHIFT  &kp LCTRL  &kp LALT  &kp LEFT_WIN  &trans
@@ -92,6 +98,7 @@
         };
 
         fun_layer {
+          display-name = "Fun";
             bindings = <
 &trans  &kp F12  &kp F7  &kp F8      &kp F9     &kp PRINTSCREEN    &trans  &trans      &trans     &trans    &trans        &trans
 &trans  &kp F11  &kp F4  &kp F5      &kp F6     &kp SCROLLLOCK     &trans  &kp LSHIFT  &kp LCTRL  &kp LALT  &kp LEFT_WIN  &trans
@@ -101,6 +108,7 @@
         };
 
         button_layer {
+          display-name = "Button";
             bindings = <
 &trans  &kp K_UNDO    &kp K_CUT     &kp K_COPY  &kp K_PASTE   &kp K_REDO    &kp K_REDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT     &kp K_UNDO    &trans
 &trans  &kp LEFT_WIN  &kp LEFT_ALT  &kp LSHIFT  &mt LSHIFT F  &trans        &trans      &kp LSHIFT   &kp LCTRL   &kp LEFT_ALT  &kp LEFT_WIN  &trans
@@ -110,6 +118,7 @@
         };
 
         ad_layer {
+          display-name = "AD";
             bindings = <
 &kp ESC         &kp INS           &kp FSLH                 &kp UP                &kp ASTERISK            &kp MINUS     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS                &kp LC(LA(KP_NUMBER_8))  &tog 8
 &kp LCTRL       &mt LEFT_WIN DEL  &mt LEFT_ALT LEFT_ARROW  &mt LCTRL DOWN_ARROW  &mt LSHIFT RIGHT_ARROW  &kp PLUS      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LC(LA(KP_NUMBER_4))  &kp LC(LA(KP_NUMBER_5))  &kp LC(LA(KP_NUMBER_6))
